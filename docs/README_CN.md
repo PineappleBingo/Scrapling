@@ -19,8 +19,8 @@
     <a href="https://hub.docker.com/r/pyd4vinci/scrapling" target="_blank">
         <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/pyd4vinci/scrapling?labelColor=%20%23FDB062&logo=Docker&labelColor=%20%23528bff"></a>
     <a href="https://clickpy.clickhouse.com/dashboard/scrapling" rel="nofollow"><img src="https://img.shields.io/pypi/dm/scrapling" alt="PyPI package downloads"></a>
-    <a href="https://github.com/D4Vinci/Scrapling/tree/main/agent-skill" alt="AI Agent Skill directory">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Skill-black?style=flat&label=Agent&link=https%3A%2F%2Fgithub.com%2FD4Vinci%2FScrapling%2Ftree%2Fmain%2Fagent-skill"></a>
+    <a href="https://scrapling.readthedocs.io/en/latest/ai/agent-skill.html" alt="AI Agent Skill">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Skill-black?style=flat&label=Agent&link=https%3A%2F%2Fscrapling.readthedocs.io%2Fen%2Flatest%2Fai%2Fagent-skill.html"></a>
     <a href="https://clawhub.ai/D4Vinci/scrapling-official" alt="OpenClaw Skill">
         <img alt="OpenClaw Skill" src="https://img.shields.io/badge/Clawhub-darkred?style=flat&label=OpenClaw&link=https%3A%2F%2Fclawhub.ai%2FD4Vinci%2Fscrapling-official"></a>
     <br/>
@@ -51,7 +51,7 @@
 
 Scrapling 是一个自适应 Web Scraping 框架，能处理从单个请求到大规模爬取的一切需求。
 
-它的解析器能够从网站变化中学习，并在页面更新时自动重新定位您的元素。它的 Fetcher 能够开箱即用地绕过 Cloudflare Turnstile 等反机器人系统。它的 Spider 框架让您可以扩展到并发、多 Session 爬取，支持暂停/恢复和自动 Proxy 轮换--只需几行 Python 代码。一个库，零妥协。
+它的解析器能够从网站变化中学习，并在页面更新时自动重新定位您的元素。它的 Fetcher 能够开箱即用地绕过 Cloudflare Turnstile 等反机器人系统。它的 Spider 框架让您可以扩展到并发、多 Session 爬取，支持暂停/恢复、自动 Proxy 轮换，以及根据每个网站的响应速度自动调整、并在网站开始封锁时自动减速的爬取速度--只需几行 Python 代码。一个库，零妥协。
 
 极速爬取，实时统计和 Streaming。由 Web Scraper 为 Web Scraper 和普通用户而构建，每个人都能找到适合自己的功能。
 
@@ -87,12 +87,21 @@ MySpider().start()
 <table>
   <tr>
     <td width="200">
-      <a href="https://go.nodemaven.com/scraplingjuly" target="_blank" title="Proxies with the Highest IP Scores">
+      <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=sponsorship&utm_campaign=202609-scrapling-readme&utm_content=platinum-badge&promo=SCRAPLING5" target="_blank" title="Residential, IPv6 & Datacenter Proxies for Web Scraping">
+        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/coldproxy.png">
+      </a>
+    </td>
+    <td> <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=sponsorship&utm_campaign=202609-scrapling-readme&utm_content=platinum-badge&promo=SCRAPLING5" target="_blank"><b>ColdProxy</b></a> 提供住宅代理和数据中心代理，用于稳定的网络抓取、公共数据收集，以及覆盖 195 多个国家/地区的地理定向测试。 <i>使用此链接可享 5% 折扣</i>。
+    </td>
+  </tr>
+  <tr>
+    <td width="200">
+      <a href="https://go.nodemaven.com/scraplingaugust" target="_blank" title="Proxies with the Highest IP Scores">
         <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/NodeMaven.jpg" width="240" height="100">
       </a>
     </td>
     <td>
-    <a href="https://go.nodemaven.com/scraplingjuly" target="_blank">NodeMaven</a> - 市场上 IP 质量最高的可靠代理提供商。使用优惠码 SCRAPLING35 可享代理 35% 折扣。
+    <a href="https://go.nodemaven.com/scraplingaugust" target="_blank">NodeMaven</a> - 最高效的网页抓取与自动化代理提供商,拥有市场上质量最高的 IP。使用优惠码 SCRAPLING35 可享 35% 折扣。
     </td>
   </tr>
   <tr>
@@ -102,15 +111,6 @@ MySpider().start()
       </a>
     </td>
     <td> <a href="https://proxidize.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=scrapling&utm_content=d4vinci" target="_blank"><b>Proxidize</b></a> 提供移动代理和住宅代理，适用于网页抓取、浏览器自动化、SEO 监控、AI 代理和数据收集。<i>使用优惠码 <b>scrapling20</b> 可享 20% 折扣</i>。
-    </td>
-  </tr>
-  <tr>
-    <td width="200">
-      <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=github&utm_campaign=coldproxy&utm_content=platinum_sponsor" target="_blank" title="Residential, IPv6 & Datacenter Proxies for Web Scraping">
-        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/coldproxy.png">
-      </a>
-    </td>
-    <td> <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=github&utm_campaign=coldproxy&utm_content=platinum_sponsor" target="_blank"><b>ColdProxy</b></a> 提供住宅代理和数据中心代理，用于稳定的网络抓取、公共数据收集，以及覆盖 195 多个国家/地区的地理定向测试。
     </td>
   </tr>
   <tr>
@@ -191,12 +191,22 @@ MySpider().start()
   </tr>
   <tr>
     <td width="200">
-      <a href="https://www.coreclaw.com/?utm_source=github&utm_medium=cpc&utm_campaign=scraping&utm_term=&utm_id=scraping" target="_blank" title="Real-Time Public Data, Ready to Use">
-        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/CoreClaw.jpg">
+      <a href="https://niuproxy.com/?utm_source=scrapling&utm_medium=scrapling&ref=scrapling" target="_blank" title="Affordable Residential in 190+ Countries">
+        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/niuproxy.png">
       </a>
     </td>
     <td>
-    <a href="https://www.coreclaw.com/?utm_source=github&utm_medium=cpc&utm_campaign=scraping&utm_term=&utm_id=scraping" target="_blank">CoreClaw</a> 为 AI 智能体提供网络数据 API。获取来自 Google 地图、LinkedIn、Instagram、YouTube、Amazon 等平台的结构化数据。
+    <a href="https://niuproxy.com/?utm_source=scrapling&utm_medium=scrapling&ref=scrapling" target="_blank">NiuProxy</a> 提供每 GB 低至 $0.35 的动态住宅代理。使用 Scrapling 专属优惠码 PAY2,充值立减 10%。
+    </td>
+  </tr>
+  <tr>
+    <td width="200">
+      <a href="https://voidmob.com/proxies?utm_source=scrapling" target="_blank" title="Premium Mobile Proxies from Real Carrier Networks">
+        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/voidmob.png">
+      </a>
+    </td>
+    <td>
+    <a href="https://voidmob.com/proxies?utm_source=scrapling" target="_blank">VoidMob</a>: 基于真实 SIM 卡和设备的 4G/5G 移动代理。独享或共享、粘性、轮换、p0f 指纹预设、API/MCP 及全协议支持。使用优惠码 SCRAPLING20 可享 20% 折扣。
     </td>
   </tr>
 </table>
@@ -207,12 +217,13 @@ MySpider().start()
 <!-- sponsors -->
 
 <a href="https://www.novada.com/?d4vinci-scrapling" target="_blank" title="The All-in-One Solution for Every Data Scraping Scenario"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/novada.jpg"></a>
+<a href="https://cloro.dev/?utm_source=referral&utm_medium=scrapling" target="_blank" title="The search API for the AI era"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/cloro.jpg"></a>
 
 <br/>
 
 <a href="https://serpapi.com/?utm_source=scrapling" target="_blank" title="Scrape Google and other search engines with SerpApi"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/SerpApi.png"></a>
 <a href="https://visit.decodo.com/Dy6W0b" target="_blank" title="Try the Most Efficient Residential Proxies for Free"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/decodo.png"></a>
-<a href="https://proxyempire.io/?ref=scrapling&utm_source=scrapling" target="_blank" title="Collect The Data Your Project Needs with the Best Residential Proxies"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/ProxyEmpire.png"></a>
+<a href="https://proxyempire.io/?ref=scrapling&utm_source=github&utm_medium=paid_referral&utm_campaign=open_source_sponsorship&utm_content=scrapling" target="_blank" title="Collect The Data Your Project Needs with the Best Residential Proxies"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/ProxyEmpire.png"></a>
 <a href="https://www.webshare.io/?referral_code=48r2m2cd5uz1" target="_blank" title="The Most Reliable Proxy with Unparalleled Performance"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/webshare.png"></a>
 <a href="https://proxiware.com/?ref=scrapling" target="_blank" title="Collect Any Data. At Any Scale."><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/proxiware.png"></a>
 
@@ -251,12 +262,15 @@ MySpider().start()
 - **后台 API 捕获**：向 `capture_xhr` 传入 URL 模式，页面加载过程中所有匹配的 XHR/fetch 响应都会作为 `Response` 对象收集到 `response.captured_xhr` 中--无需自己逆向分析请求即可获取网站的 API 数据。
 - **Async 支持**：所有 Fetcher 和专用 async Session 类的完整 async 支持。
 
-### 自适应抓取和 AI 集成
+### 自适应抓取
 - 🔄 **智能元素跟踪**：使用智能相似性算法在网站更改后重新定位元素。
 - 🎯 **智能灵活选择**：CSS 选择器、XPath 选择器、基于过滤器的搜索、文本搜索、正则表达式搜索等。
 - 🔍 **查找相似元素**：自动定位与已找到元素相似的元素。
-- 🤖 **与 AI 一起使用的 MCP 服务器**：内置 MCP 服务器用于 AI 辅助 Web Scraping 和数据提取。MCP 服务器具有强大的自定义功能，利用 Scrapling 在将内容传递给 AI（Claude/Cursor 等）之前提取目标内容，从而加快操作并通过最小化 token 使用来降低成本。（[演示视频](https://www.youtube.com/watch?v=qyFk3ZNwOxE)）它还可以在多次调用之间保持浏览器会话、截取页面截图，并通过 CDP 驱动远程浏览器。
-- 🧠 **Agent Skill**：[开箱即用的 Agent Skill](https://github.com/D4Vinci/Scrapling/tree/main/agent-skill)，让编码智能体全面掌握本库，使它们用 Scrapling 写出的代码符合当前 API，而不是靠猜测。
+
+### AI 功能
+- 🤖 **MCP 服务器**：让 AI 聊天机器人和智能体（Claude/Cursor 等）通过 Scrapling 抓取网页，提供一次性工具和基于会话的工具，覆盖普通 HTTP 请求（任意方法）、浏览器抓取以及可绕过 Cloudflare 的隐身抓取。页面在交给 AI 之前会先用 CSS 选择器缩小范围并清除提示注入内容，因此智能体读得更少、花得更少，也不会被隐藏文本劫持。还包含页面截图、通过 CDP 控制远程浏览器，以及默认安全的 HTTP 传输。（[演示视频](https://www.youtube.com/watch?v=qyFk3ZNwOxE)）
+- 🧠 **Agent Skill**：[开箱即用的 Agent Skill](https://scrapling.readthedocs.io/en/latest/ai/agent-skill.html)，让编码智能体全面掌握本库，使它们用 Scrapling 写出的代码符合当前 API，而不是靠猜测。
+- 📚 **RAG 就绪的 Markdown**：用一行代码（`page.markdown()`）把任意页面转换为干净、经过净化、可直接供 LLM 使用的 Markdown，或使用 `SiteToMarkdownSpider` 模板把整个网站抓取为 Markdown 语料库，整个过程无需调用 LLM。（[文档](https://scrapling.readthedocs.io/en/latest/ai/building-rag-systems.html)）
 
 ### 高性能和经过实战测试的架构
 - 🚀 **闪电般快速**：优化性能超越大多数 Python 抓取库。
@@ -525,6 +539,10 @@ pip install scrapling
    - 安装 MCP 服务器功能：
        ```bash
        pip install "scrapling[ai]"
+       ```
+   - 安装（[构建 RAG 系统](https://scrapling.readthedocs.io/en/latest/ai/building-rag-systems.html)）所需的依赖：
+       ```bash
+       pip install "scrapling[rag]"
        ```
    - 安装 Shell 功能（Web Scraping Shell 和 `extract` 命令）：
        ```bash

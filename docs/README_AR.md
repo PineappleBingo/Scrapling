@@ -19,8 +19,8 @@
     <a href="https://hub.docker.com/r/pyd4vinci/scrapling" target="_blank">
         <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/pyd4vinci/scrapling?labelColor=%20%23FDB062&logo=Docker&labelColor=%20%23528bff"></a>
     <a href="https://clickpy.clickhouse.com/dashboard/scrapling" rel="nofollow"><img src="https://img.shields.io/pypi/dm/scrapling" alt="PyPI package downloads"></a>
-    <a href="https://github.com/D4Vinci/Scrapling/tree/main/agent-skill" alt="AI Agent Skill directory">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Skill-black?style=flat&label=Agent&link=https%3A%2F%2Fgithub.com%2FD4Vinci%2FScrapling%2Ftree%2Fmain%2Fagent-skill"></a>
+    <a href="https://scrapling.readthedocs.io/en/latest/ai/agent-skill.html" alt="AI Agent Skill">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Skill-black?style=flat&label=Agent&link=https%3A%2F%2Fscrapling.readthedocs.io%2Fen%2Flatest%2Fai%2Fagent-skill.html"></a>
     <a href="https://clawhub.ai/D4Vinci/scrapling-official" alt="OpenClaw Skill">
         <img alt="OpenClaw Skill" src="https://img.shields.io/badge/Clawhub-darkred?style=flat&label=OpenClaw&link=https%3A%2F%2Fclawhub.ai%2FD4Vinci%2Fscrapling-official"></a>
     <br/>
@@ -51,7 +51,7 @@
 
 Scrapling هو إطار عمل تكيفي لـ Web Scraping يتعامل مع كل شيء من طلب واحد إلى زحف كامل النطاق.
 
-محلله يتعلم من تغييرات المواقع ويعيد تحديد موقع عناصرك تلقائياً عند تحديث الصفحات. جوالبه تتجاوز أنظمة مكافحة الروبوتات مثل Cloudflare Turnstile مباشرةً. وإطار عمل Spider الخاص به يتيح لك التوسع إلى عمليات زحف متزامنة ومتعددة الجلسات مع إيقاف/استئناف وتدوير تلقائي لـ Proxy - كل ذلك في بضعة أسطر من Python. مكتبة واحدة، بدون تنازلات.
+محلله يتعلم من تغييرات المواقع ويعيد تحديد موقع عناصرك تلقائياً عند تحديث الصفحات. جوالبه تتجاوز أنظمة مكافحة الروبوتات مثل Cloudflare Turnstile مباشرةً. وإطار عمل Spider الخاص به يتيح لك التوسع إلى عمليات زحف متزامنة ومتعددة الجلسات مع إيقاف/استئناف، وتدوير تلقائي لـ Proxy، وسرعة زحف تتكيف مع سرعة استجابة كل موقع وتتراجع عندما يبدأ بحظرك - كل ذلك في بضعة أسطر من Python. مكتبة واحدة، بدون تنازلات.
 
 زحف سريع للغاية مع إحصائيات فورية و Streaming. مبني بواسطة مستخرجي الويب لمستخرجي الويب والمستخدمين العاديين، هناك شيء للجميع.
 
@@ -87,12 +87,21 @@ MySpider().start()
 <table>
   <tr>
     <td width="200">
-      <a href="https://go.nodemaven.com/scraplingjuly" target="_blank" title="Proxies with the Highest IP Scores">
+      <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=sponsorship&utm_campaign=202609-scrapling-readme&utm_content=platinum-badge&promo=SCRAPLING5" target="_blank" title="Residential, IPv6 & Datacenter Proxies for Web Scraping">
+        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/coldproxy.png">
+      </a>
+    </td>
+    <td> توفر <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=sponsorship&utm_campaign=202609-scrapling-readme&utm_content=platinum-badge&promo=SCRAPLING5" target="_blank"><b>ColdProxy</b></a> وكلاء سكنيين ووكلاء مراكز بيانات لاستخراج بيانات الويب بشكل مستقر، وجمع البيانات العامة، والاختبار الموجَّه جغرافياً في أكثر من 195 دولة. <i>استخدام هذا الرابط يمنحك خصم 5%</i>.
+    </td>
+  </tr>
+  <tr>
+    <td width="200">
+      <a href="https://go.nodemaven.com/scraplingaugust" target="_blank" title="Proxies with the Highest IP Scores">
         <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/NodeMaven.jpg" width="240" height="100">
       </a>
     </td>
     <td>
-    <a href="https://go.nodemaven.com/scraplingjuly" target="_blank">NodeMaven</a> - مزود بروكسيات موثوق يقدم أعلى جودة IP في السوق. استخدم كود الخصم SCRAPLING35 للحصول على خصم 35% على البروكسيات.
+    <a href="https://go.nodemaven.com/scraplingaugust" target="_blank">NodeMaven</a> - أكفأ مزود بروكسيات للـ Web Scraping والأتمتة، مع أعلى جودة IP في السوق. استخدم الكود SCRAPLING35 للحصول على خصم 35%.
     </td>
   </tr>
   <tr>
@@ -102,15 +111,6 @@ MySpider().start()
       </a>
     </td>
     <td> توفر <a href="https://proxidize.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=scrapling&utm_content=d4vinci" target="_blank"><b>Proxidize</b></a> وكلاء جوّالين وسكنيين للاستخراج، وأتمتة المتصفح، ومراقبة تحسين محركات البحث (SEO)، ووكلاء الذكاء الاصطناعي، وجمع البيانات. <i>استخدم الرمز <b>scrapling20</b> للحصول على خصم 20%</i>.
-    </td>
-  </tr>
-  <tr>
-    <td width="200">
-      <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=github&utm_campaign=coldproxy&utm_content=platinum_sponsor" target="_blank" title="Residential, IPv6 & Datacenter Proxies for Web Scraping">
-        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/coldproxy.png">
-      </a>
-    </td>
-    <td> توفر <a href="https://coldproxy.com/?utm_source=scrapling&utm_medium=github&utm_campaign=coldproxy&utm_content=platinum_sponsor" target="_blank"><b>ColdProxy</b></a> وكلاء سكنيين ووكلاء مراكز بيانات لاستخراج بيانات الويب بشكل مستقر، وجمع البيانات العامة، والاختبار الموجَّه جغرافياً في أكثر من 195 دولة.
     </td>
   </tr>
   <tr>
@@ -191,12 +191,22 @@ MySpider().start()
   </tr>
   <tr>
     <td width="200">
-      <a href="https://www.coreclaw.com/?utm_source=github&utm_medium=cpc&utm_campaign=scraping&utm_term=&utm_id=scraping" target="_blank" title="Real-Time Public Data, Ready to Use">
-        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/CoreClaw.jpg">
+      <a href="https://niuproxy.com/?utm_source=scrapling&utm_medium=scrapling&ref=scrapling" target="_blank" title="Affordable Residential in 190+ Countries">
+        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/niuproxy.png">
       </a>
     </td>
     <td>
-    يوفر <a href="https://www.coreclaw.com/?utm_source=github&utm_medium=cpc&utm_campaign=scraping&utm_term=&utm_id=scraping" target="_blank">CoreClaw</a> واجهات برمجة تطبيقات لبيانات الويب مخصصة لوكلاء الذكاء الاصطناعي. احصل على بيانات منظمة من خرائط Google وLinkedIn وInstagram وYouTube وAmazon والمزيد.
+    يوفر <a href="https://niuproxy.com/?utm_source=scrapling&utm_medium=scrapling&ref=scrapling" target="_blank">NiuProxy</a> بروكسيات سكنية دوّارة ابتداءً من $0.35 لكل جيجابايت. استخدم كود Scrapling الحصري PAY2 واحصل على خصم 10% عند شحن رصيدك.
+    </td>
+  </tr>
+  <tr>
+    <td width="200">
+      <a href="https://voidmob.com/proxies?utm_source=scrapling" target="_blank" title="Premium Mobile Proxies from Real Carrier Networks">
+        <img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/voidmob.png">
+      </a>
+    </td>
+    <td>
+    <a href="https://voidmob.com/proxies?utm_source=scrapling" target="_blank">VoidMob</a>: بروكسيات موبايل 4G/5G على شرائح SIM وأجهزة حقيقية. مخصصة أو مشتركة، ثابتة، دوّارة، إعدادات مسبقة لبصمة p0f، دعم API/MCP وجميع البروتوكولات. استخدم كود SCRAPLING20 للحصول على خصم 20%.
     </td>
   </tr>
 </table>
@@ -207,12 +217,13 @@ MySpider().start()
 <!-- sponsors -->
 
 <a href="https://www.novada.com/?d4vinci-scrapling" target="_blank" title="The All-in-One Solution for Every Data Scraping Scenario"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/novada.jpg"></a>
+<a href="https://cloro.dev/?utm_source=referral&utm_medium=scrapling" target="_blank" title="The search API for the AI era"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/cloro.jpg"></a>
 
 <br/>
 
 <a href="https://serpapi.com/?utm_source=scrapling" target="_blank" title="Scrape Google and other search engines with SerpApi"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/SerpApi.png"></a>
 <a href="https://visit.decodo.com/Dy6W0b" target="_blank" title="Try the Most Efficient Residential Proxies for Free"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/decodo.png"></a>
-<a href="https://proxyempire.io/?ref=scrapling&utm_source=scrapling" target="_blank" title="Collect The Data Your Project Needs with the Best Residential Proxies"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/ProxyEmpire.png"></a>
+<a href="https://proxyempire.io/?ref=scrapling&utm_source=github&utm_medium=paid_referral&utm_campaign=open_source_sponsorship&utm_content=scrapling" target="_blank" title="Collect The Data Your Project Needs with the Best Residential Proxies"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/ProxyEmpire.png"></a>
 <a href="https://www.webshare.io/?referral_code=48r2m2cd5uz1" target="_blank" title="The Most Reliable Proxy with Unparalleled Performance"><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/webshare.png"></a>
 <a href="https://proxiware.com/?ref=scrapling" target="_blank" title="Collect Any Data. At Any Scale."><img src="https://raw.githubusercontent.com/D4Vinci/Scrapling/main/images/proxiware.png"></a>
 
@@ -251,12 +262,15 @@ MySpider().start()
 - **التقاط طلبات API في الخلفية**: مرر نمط URL إلى `capture_xhr`، وسيتم جمع كل استجابات XHR/fetch المطابقة التي تصدرها الصفحة أثناء التحميل ككائنات `Response` في `response.captured_xhr` - احصل على بيانات API الموقع دون الحاجة لتحليل الطلبات بنفسك.
 - **دعم Async**: دعم async كامل عبر جميع الجوالب وفئات الجلسات async المخصصة.
 
-### الاستخراج التكيفي والتكامل مع الذكاء الاصطناعي
+### الاستخراج التكيفي
 - 🔄 **تتبع العناصر الذكي**: إعادة تحديد موقع العناصر بعد تغييرات الموقع باستخدام خوارزميات التشابه الذكية.
 - 🎯 **الاختيار المرن الذكي**: محددات CSS، محددات XPath، البحث القائم على الفلاتر، البحث النصي، البحث بالتعبيرات العادية والمزيد.
 - 🔍 **البحث عن عناصر مشابهة**: تحديد العناصر المشابهة للعناصر الموجودة تلقائياً.
-- 🤖 **خادم MCP للاستخدام مع الذكاء الاصطناعي**: خادم MCP مدمج لـ Web Scraping بمساعدة الذكاء الاصطناعي واستخراج البيانات. يتميز خادم MCP بقدرات قوية مخصصة تستفيد من Scrapling لاستخراج المحتوى المستهدف قبل تمريره إلى الذكاء الاصطناعي (Claude/Cursor/إلخ)، وبالتالي تسريع العمليات وتقليل التكاليف عن طريق تقليل استخدام الرموز. ([فيديو توضيحي](https://www.youtube.com/watch?v=qyFk3ZNwOxE)) كما يمكنه إبقاء جلسات المتصفح مفتوحة عبر عدة استدعاءات، والتقاط صور للصفحات، والتحكم في متصفحات بعيدة عبر CDP.
-- 🧠 **Agent Skill**: [مهارة جاهزة للتثبيت](https://github.com/D4Vinci/Scrapling/tree/main/agent-skill) تُعلّم وكلاء البرمجة المكتبة بالكامل، حتى يكون الكود الذي يكتبونه بـ Scrapling مطابقاً للواجهة الحالية بدلاً من التخمين.
+
+### ميزات الذكاء الاصطناعي
+- 🤖 **خادم MCP**: دع روبوتات الدردشة ووكلاء الذكاء الاصطناعي (Claude/Cursor/إلخ) يستخرجون البيانات عبر Scrapling بأدوات تعمل لمرة واحدة أو عبر جلسات، وتغطي طلبات HTTP العادية (بأي طريقة)، وجلب الصفحات بالمتصفح، والجلب الخفي الذي يتجاوز Cloudflare. يتم تضييق الصفحات بمحددات CSS وتنظيفها من محتوى حقن الأوامر قبل أن يراها الذكاء الاصطناعي، فيقرأ الوكيل أقل، ويكلف أقل، ولا يمكن اختطافه بنص مخفي. كما تتوفر لقطات الشاشة، والمتصفحات البعيدة عبر CDP، ونقل HTTP آمن افتراضياً. ([فيديو توضيحي](https://www.youtube.com/watch?v=qyFk3ZNwOxE))
+- 🧠 **Agent Skill**: [مهارة جاهزة للتثبيت](https://scrapling.readthedocs.io/en/latest/ai/agent-skill.html) تُعلّم وكلاء البرمجة المكتبة بالكامل، حتى يكون الكود الذي يكتبونه بـ Scrapling مطابقاً للواجهة الحالية بدلاً من التخمين.
+- 📚 **Markdown جاهز لأنظمة RAG**: حوّل أي صفحة إلى Markdown نظيف ومعقّم وجاهز لنماذج اللغة بسطر واحد (`page.markdown()`)، أو ازحف موقعاً كاملاً إلى مجموعة ملفات Markdown باستخدام القالب `SiteToMarkdownSpider`، كل ذلك بدون استخدام أي نموذج لغوي في العملية. ([الوثائق](https://scrapling.readthedocs.io/en/latest/ai/building-rag-systems.html))
 
 ### بنية عالية الأداء ومختبرة ميدانياً
 - 🚀 **سريع كالبرق**: أداء محسّن يتفوق على معظم مكتبات Web Scraping في Python.
@@ -525,6 +539,10 @@ pip install scrapling
    - تثبيت ميزة خادم MCP:
        ```bash
        pip install "scrapling[ai]"
+       ```
+   - تثبيت اعتماديات ([بناء أنظمة RAG](https://scrapling.readthedocs.io/en/latest/ai/building-rag-systems.html)):
+       ```bash
+       pip install "scrapling[rag]"
        ```
    - تثبيت ميزات Shell (Shell الـ Web Scraping وأمر `extract`):
        ```bash
